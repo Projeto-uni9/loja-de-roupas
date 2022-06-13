@@ -22,4 +22,7 @@ Além disso, para que consiga subir o servidor, utilize o Apache Tomcat, dispon�
 # ANEXOS 
 Vale lembrar que todas as imagens estão disponíveis em arquivos nas devidas pastas do repositório para melhor visualização.
 
+# INPUT IMAGEM NO CADASTRO
 
+Não adicionamos a funcionalidade para adicionar imagem do produto uma vez que não conseguimos.
+Em uma atualização futura, talvez essa funcionalidade torne-se possível
