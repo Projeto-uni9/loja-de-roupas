@@ -12,6 +12,7 @@ O Script do banco está disponível tanto no documento do projeto, como em um ar
 # SERVIDOR 
 Além disso, para que consiga subir o servidor, utilize o Apache Tomcat, disponível no link abaixo:
 [`https://tomcat.apache.org/download-90.cgi`]
+
 ▪ No tópico 9.0.64 da página, baixe em Core, o arquivo Zip;
 ▪ Descompacte a pasta em algum local;
 ▪ Adicione ao projeto o servidor com o Tomcat;
