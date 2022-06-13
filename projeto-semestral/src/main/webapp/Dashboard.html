@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITULO DA PAGINA -->
+    <title>DaModa - Dashboard</title>
+
+    <!-- ICONE DA PAGINA -->
+    <link rel="icon" href="./DMLogo.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style-dashboard.css">
+
+    <!-- FONTAWESOME CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+  </head>
+
+
+  <body>
+    <header>
+      <!-- NAVEGAÇÃO TOPO -->
+      <nav class="nav-topo">
+        <div class="logo">
+          <span class="logo">DaModa</span>
+        </div>
+
+        <div class="profile">
+          <a href="#" class="name-profile">Projeto Semestral</a>
+          <a href="#" class="image-profile">
+            <img class="icon-profile" src="./ProfileUnknow.jpg" alt="profileUNK">
+          </a>
+        </div>
+
+      </nav>
+    </header>
+
+    <!-- NAVEGAÇÃO LATERAL -->
+    <nav class="sidebar">
+
+      <header>
+        <li class="search-box">
+          <i class="fa-solid fa-magnifying-glass icon"></i>
+          <input type="search" placeholder="Search..."/>
+        </li>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          
+          <ul class="menu-links">
+
+            <li class="nav-link selected">
+              <a href="./Dashboard.html">
+                <i class="fa-solid fa-house icon"></i>
+                <span class="nav-text">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="./Atendimento.html">
+                <i class="fa-solid fa-circle-question icon"></i>
+                <span class="nav-text">Atendimento</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="./Comentarios.html">
+                <i class="fa-solid fa-comments icon"></i>
+                <span class="nav-text">Comentários</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="./produtos">
+                <i class="fa-solid fa-cubes icon"></i>
+                <span class="nav-text">Produtos</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="#">
+                <i class="fa-solid fa-tags icon"></i>
+                <span class="nav-text">Cupons</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+
+        <div class="bottom-content">
+
+          <li class="logout">
+            <button class="btn-logout" onclick="window.close()">
+              <i class="fa-solid fa-right-from-bracket icon"></i>
+              Encerrar Sessão
+            </button>
+          </li>
+          
+        </div>
+      </div>
+
+    </nav>
+
+
+    <section class="home-dashboard">
+      <div class="title">
+        <span class="atual-page">Dashboard</span>
+      </div>
+
+
+      <div class="dash-content">
+
+
+        <!-- ESTATISTICS -->
+        <div class="analytics">
+
+          <div class="container-estatistics container1">
+            <i class="fa-solid fa-boxes-stacked icon"></i>
+            <span class="name-estatistics">Nível do Estoque</span>
+            <span class="number-estatistics">7.283</span>
+          </div>
+  
+          <div class="container-estatistics container2">
+            <i class="fa-solid fa-money-bills icon"></i>
+            <span class="name-estatistics">Renda Mensal</span>
+            <span class="number-estatistics">R$73.285,92</span>
+          </div>
+  
+          <div class="container-estatistics container3">
+            <i class="fa-solid fa-boxes-packing icon"></i>
+            <span class="name-estatistics">Produtos Vendidos</span>
+            <span class="number-estatistics">12.354</span>
+          </div>
+        </div>
+
+
+        <!-- SUPPORT -->
+        <div class="atendimentos">
+
+          <h2 class="section-title">Atendimento</h2>
+
+
+          <!-- QUESTIONS  -->
+          <div class="containers-quest">
+            <div class="container-questions">
+
+              <div class="info-quest">
+                <span class="image-profile"><img src="./Atendimento1.jpg" alt=""></span>
+                <span class="name-profile">João Oliveira</span>
+                <span class="date-question">(Enviado em 14/03/2022)</span>
+              </div>
+              <p class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur blandit nulla, ut sagittis tellus bibendum eu?</p>
+            
+            </div>
+  
+          
+            <div class="container-questions">
+  
+              <div class="info-quest">
+                <span class="image-profile"><img src="./Atendimento2.jpg" alt=""></span>
+                <span class="name-profile">Paula Cristina</span>
+                <span class="date-question">(Enviado em 27/02/2022)</span>
+              </div>
+              <p class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur blandit nulla, ut sagittis tellus bibendum eu?</p>
+            
+            </div>
+  
+  
+            <div class="container-questions">
+  
+              <div class="info-quest">
+                <span class="image-profile"><img src="./Atendimento3.jpg" alt=""></span>
+                <span class="name-profile">Gabriel Silva</span>
+                <span class="date-question">(Enviado em 19/02/2022)</span>
+              </div>
+              <p class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur blandit nulla, ut sagittis tellus bibendum eu?</p>
+            
+            </div>
+  
+  
+            <div class="container-questions">
+  
+              <div class="info-quest">
+                <span class="image-profile"><img src="./Atendimento4.jpg" alt=""></span>
+                <span class="name-profile">Juliana Pereira</span>
+                <span class="date-question">(Enviado em 21/02/2022)</span>
+              </div>
+              <p class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur blandit nulla, ut sagittis tellus bibendum eu?</p>
+  
+            </div>
+  
+  
+            <div class="container-questions">
+  
+              <div class="info-quest">
+                <span class="image-profile"><img src="./Atendimento5.jpg" alt=""></span>
+                <span class="name-profile">Jéssica Silva</span>
+                <span class="date-question">(Enviado em 07/01/2022)</span>
+              </div>
+              <p class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur blandit nulla, ut sagittis tellus bibendum eu?</p>
+  
+            </div>
+  
+  
+            <div class="container-questions">
+              <div class="info-quest">
+                <span class="image-profile"><img src="./Atendimento6.jpg" alt=""></span>
+                <span class="name-profile">Daniela Smidth</span>
+                <span class="date-question">(Enviado em 02/01/2022)</span>
+              </div>
+              <p class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur blandit nulla, ut sagittis tellus bibendum eu?</p>
+  
+            </div>
+
+            <span class="seeall"><a href="#">Ver Tudo</a></span>
+
+          </div>
+          
+        </div>
+
+
+        <!-- COMMENTS -->
+        <div class="comments">
+
+          <h2 class="section-title">Comentários</h2>
+
+          <div class="containers-com">
+            <div class="container-comment">
+
+              <div class="info">
+                <span class="image-profile"><img src="./Atendimento1.jpg" alt=""></span>
+                <span class="name-profile">Pedro Gomes</span>
+                <span class="date-comment">(Enviado em 02/01/2022)</span>
+              </div>
+              <p class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur blandit nulla, ut sagittis tellus bibendum eu?</p>
+            
+            </div>
+  
+          
+            <div class="container-comment">
+  
+              <div class="info">
+                <span class="image-profile"><img src="./Atendimento2.jpg" alt=""></span>
+                <span class="name-profile">Cristina Souza</span>
+                <span class="date-comment">(Enviado em 16/10/2021)</span>
+              </div>
+              <p class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur blandit nulla, ut sagittis tellus bibendum eu?</p>
+            
+            </div>
+  
+  
+            <div class="container-comment">
+  
+              <div class="info">
+                <span class="image-profile"><img src="./Atendimento3.jpg" alt=""></span>
+                <span class="name-profile">Henrique Dias</span>
+                <span class="date-comment">(Enviado em 19/10/2021)</span>
+              </div>
+              <p class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur blandit nulla, ut sagittis tellus bibendum eu?</p>
+            
+            </div>
+  
+  
+            <div class="container-comment">
+  
+              <div class="info">
+                <span class="image-profile"><img src="./Atendimento4.jpg" alt=""></span>
+                <span class="name-profile">Paula Ferreira</span>
+                <span class="date-comment">(Enviado em 21/07/2021)</span>
+              </div>
+              <p class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur blandit nulla, ut sagittis tellus bibendum eu</p>
+  
+            </div>
+  
+  
+            <div class="container-comment">
+  
+              <div class="info">
+                <span class="image-profile"><img src="./Atendimento5.jpg" alt=""></span>
+                <span class="name-profile">Pietra Castro</span>
+                <span class="date-comment">(Enviado em 07/07/2021)</span>
+              </div>
+              <p class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur blandit nulla, ut sagittis tellus bibendum eu</p>
+  
+            </div>
+  
+  
+            <div class="container-comment">
+              <div class="info">
+                <span class="image-profile"><img src="./Atendimento6.jpg" alt=""></span>
+                <span class="name-profile">Denise Oliveira</span>
+                <span class="date-comment">(Enviado em 24/06/2021)</span>
+              </div>
+              <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur blandit nulla, ut sagittis tellus bibendum eu</p>
+  
+            </div>
+
+            <span class="seeall"><a href="#">Ver Tudo</a></span>
+
+          </div>
+        </div>
+        
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer id="rodape">
+
+      <div class="content">
+       
+        <div class="container1-footer">
+          <h3 class="footer-title">Contatos</h3>
+          <ul>
+            <li class="contacts">
+              <i class="fa-brands fa-facebook-square"></i>
+              <a href="#">Lojas DaModa</a>
+            </li>
+            <li class="contacts">
+              <i class="fa-brands fa-instagram"></i>
+              <a href="#">@Loja.DaModa</a>
+            </li>
+            <li class="contacts">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="#">loja.damoda@contato.com</a>
+            </li>
+            <li class="contacts">
+              <i class="fa-solid fa-phone"></i>
+              <a href="#">(11) 9999-9999 / (11) 9 9999-9999</a>
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="container-main">
+          <img src="./DMLogo.png" alt="">
+          <p> Reunimos aqui produtos de diversas marcas e lojas de todo o globo.</p>
+        </div>
+        
+
+        <div class="container2-footer">
+
+          <h3 class="footer-title">Mais Abas</h3>
+
+          <ul>
+            <li class="pages"><a href="#">Dashboard</a></li>
+            <li class="pages"><a href="#">Atendimento</a></li>
+            <li class="pages"><a href="#">Comentários</a></li>
+            <li class="pages"><a href="#">Produtos</a></li>
+            <li class="pages"><a href="#">Cupons</a></li>
+          </ul>
+
+        </div>
+      
+
+      </div>
+
+      <div class="copyright">
+        <p class="credits">© Copyright 2022 - All Rights Reserved</p>
+        <p class="credits">Designed by Júlio Caria</p>
+      </div>
+      
+
+    </footer>
+
+  </body>
+
+
+</html>

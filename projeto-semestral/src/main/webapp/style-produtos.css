@@ -1,0 +1,234 @@
+@charset "ISO-8859-1";
+
+/* IMPORTAÇÃO DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+:root {
+  --primary-color: hsl(0, 0%, 5%);
+  --secondary-color: hsl(0, 77%, 66%);
+  --secondary-color-hover: hsl(360, 85%, 63%);
+  --background-color: hsl(0, 0%, 5%);
+  --white-color:hsl(0, 0%, 100%);
+  --grey-color: hsl(0, 0%, 93%);
+  --color-blue: hsl(210, 79%, 46%);
+  --orange-color: hsl(10, 78%, 47%);
+  --details-grey-color: hsl(0, 0%, 44%);
+
+  --container1-estatistics:  hsl(212, 88%, 90%);
+  --container2-estatistics:  hsl(133, 88%, 90%);
+  --container3-estatistics:  hsl(271, 88%, 90%);
+
+  --boxes-grey: hsl(0, 0%, 86%);
+  --green-details: hsl(94, 53%, 52%);
+  --background-color-conteudo: hsl(0, 0%, 84%);
+
+  --green-button: hsl(93, 57%, 47%);
+  --green-button-hover: hsl(93, 70%, 34%);
+  --line-google-button: hsl(10, 87%, 42%);
+  --line-facebook-button: hsl(210, 84%, 38%);
+
+  --section-destaque: hsl(27, 35%, 75%);
+  --button-section-destaque: hsl(27, 55%, 63%);
+}
+
+/* FORMATAÇÃO GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+
+  width: 100%;
+}
+
+/* CONTÉUDO PRINCIPAL - TOPO*/
+
+section.products-content{
+  position: relative;
+  left: 250px;
+  
+  width: calc(100% - 250px);
+}
+
+.products-content .title {
+  display: flex;
+  align-items: center;
+
+  border-radius: 6px;
+
+  background-color: var(--white-color);
+
+  position: relative;
+
+  width: 100%;
+  height: 46px;
+  padding-inline: 12px;
+
+  font-size: 1.063rem;
+  font-weight: 600;
+}
+
+.products-content .main-content {
+  padding-inline: 32px;
+}
+
+.products-content .topo {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 24px;
+}
+
+.products-content .topo li.search-boxdash {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  border-radius: 6px;
+
+  background-color: var(--white-color);
+
+  width: 18.875rem;
+  height: 35px;
+
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.topo li.search-boxdash input {
+  height: 100%;
+  padding: 12px;
+
+  outline: none;
+  border: none;
+  border-radius: 6px;
+
+  background-color: var(--white-color);
+  color: var(--grey-color);
+  
+  font-size: 1.063rem; /* 17px */
+  font-weight: 500;
+}
+
+.topo li.search-boxdash i {
+  position: absolute;
+  right: 1rem;
+
+  width: 1rem;
+  height: 1rem;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+.main-content .btn-cadastrardash {
+  border: none;
+  background-color: var(--green-button);
+  padding: 12px;
+  color: var(--white-color);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.main-content .btn-cadastrardash:hover {
+  color: var(--white-color);
+  background-color: var(--green-button-hover);
+}
+
+/* PRODUTOS - LISTAGEM */
+
+.container-product {
+  position: relative;
+  display: flex;
+
+  height: auto;
+  width: 100%;
+
+  background-color: var(--white-color);
+
+  margin-block: 1rem;
+  border-radius: 6px;
+
+  padding: 1rem;
+}
+
+.container-product .container-imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--details-grey-color);
+  background-color: var(--grey-color);
+
+  border-radius: 6px;
+
+  height: auto;
+  max-height: auto;
+
+  width: 13%;
+}
+
+.container-product .info-products {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  margin-inline: 12px;
+}
+
+.container-product .info-products h4.name-product{
+  font-size: 1.25rem; /* 20px */
+  font-weight: 700;
+}
+
+.container-product .info-products .provider-title {
+  font-size: 1.063rem;
+  color: var(--details-grey-color);
+}
+
+.container-product .info-products p.info-title {
+  font-size: 1.128rem;
+  font-weight: 700;
+}
+
+.container-product .info-products span.text {
+  font-weight: 300;
+  font-size: 1.063rem;
+}
+
+.container-product .info-products .description {
+  display: block;
+  width: 70%;
+}
+
+.container-product .btns-modify {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.128rem;
+}
+
+.container-product a {
+  text-decoration: none;
+}
+
+.container-product .delete-product a {
+  color: var(--secondary-color);
+  margin-right: 12px;
+}
+
+.container-product .modify-product a {
+  color: var(--color-blue);
+}
+
+.container-product a:hover {
+  text-decoration: underline;
+}

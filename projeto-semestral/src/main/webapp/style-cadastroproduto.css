@@ -1,0 +1,215 @@
+@charset "ISO-8859-1";
+
+/* Import Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+/* Formatação Geral */
+
+:root {
+    --primary-color: hsl(0, 0%, 5%);
+    --secondary-color: hsl(0, 77%, 66%);
+    --secondary-color-hover: rgb(165, 16, 16);
+    --background-color: hsl(0, 0%, 5%);
+    --white-color:hsl(0, 0%, 100%);
+    --grey-color: hsl(0, 0%, 93%);
+    --details-grey-color: hsl(0, 0%, 44%);
+
+    --text-color: hsl(0, 0%, 0%);
+  
+    --container1-estatistics:  hsl(212, 88%, 90%);
+    --container2-estatistics:  hsl(133, 88%, 90%);
+    --container3-estatistics:  hsl(271, 88%, 90%);
+  
+    --boxes-grey: hsl(0, 0%, 86%);
+    --green-details: hsl(94, 53%, 52%);
+    --background-color-conteudo: hsl(0, 0%, 84%);
+  
+    --green-button: hsl(93, 57%, 47%);
+    --green-button-hover: hsl(93, 70%, 34%);
+    --button-google-login: hsl(10, 78%, 47%);
+    --line-google-button: hsl(10, 87%, 42%);
+    --button-facebook-login: hsl(210, 79%, 46%);
+    --line-facebook-button: hsl(210, 84%, 38%);
+  
+    --section-destaque: hsl(27, 35%, 75%);
+    --button-section-destaque: hsl(27, 55%, 63%);
+}
+
+/* FORMATAÇÃO GERAL DA PÁGINA */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    
+    color: var(--white-color);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+
+    background-color: var(--background-color);
+}
+
+
+/* FORMATAÇÃO HEADER */
+
+header h2.title-page {
+    color: var(--white-color);
+    font-size: 2rem;
+    font-weight: 700;
+
+    margin-block: 1rem;
+}
+
+header .return-link {
+    background-color: var(--secondary-color);
+
+    border-radius: 50%;
+
+    position: fixed;
+    left: 64px;
+    top: 64px;
+
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+header .return-link:hover {
+    background-color: var(--secondary-color-hover);
+}
+
+header .return-link a {
+    color: var(--primary-color);
+}
+
+/* FORMATAÇÃO DO CONTEÚDO */
+
+main {
+    width: 60%;
+
+    background-color: var(--white-color);
+    color: var(--text-color);
+
+    border-radius: 6px;
+    padding: 12px;
+}
+
+#formregister-products {
+    padding: 2rem;
+}
+
+#formregister-products .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--details-grey-color);
+    background-color: var(--grey-color);
+    border-radius: 6px;
+
+    margin: auto auto;
+    
+    width: 161px;
+    height: 217px;
+}
+
+#formregister-products label,
+#formregister-products .image {
+    cursor: pointer;
+}
+
+#formregister-products input[type='file'] {
+  margin-block: 12px;
+  display: none;
+}
+
+#formregister-products .title-session {
+    text-align: left;
+}
+
+#formregister-products textarea {
+	resize: none;
+}
+
+#formregister-products select,
+#formregister-products textarea,
+#formregister-products input[type="text"], input[type="number"] {
+    border: none;
+    border-radius: 6px;
+    outline: 2px solid var(--primary-color);
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+
+    width: 100%;
+
+    padding: 0.75rem;
+    margin-block: 12px;
+    margin-right: 12px;
+}
+
+#formregister-products .row-container-form { 
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+#formregister-products .color-size-quantity {
+    display: flex;
+}
+
+#formregister-products .first-container {
+    width: 100%;
+    margin-right: 24px;
+}
+
+#formregister-products .second-container {
+    position: relative;
+
+}
+
+#formregister-products  .second-container .resultado {
+    position: absolute;
+    bottom: 6px;
+}
+
+#formregister-products input[type="submit"]#cadastrar,
+#formregister-products input[Type="submit"]#salvar{
+    width: 100%;
+    height: 2.8125rem;
+    
+    border-radius: 6px;
+    border: none;
+
+    background-color: var(--green-button);
+    
+    font-size: 1rem;
+    color: var(--white-color);
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+#formregister-products input[type="submit"]#cadastrar:hover,
+#formregister-products input[Type="submit"]#salvar:hover {
+    background-color: var(--green-button-hover);
+}
